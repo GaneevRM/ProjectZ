@@ -34,7 +34,19 @@ $(function() {
 });
 
 $(function() {
-	$(".btn-transfer").click(function() {
+  $(".btn-transfer-alert").click(function() {
+  $(".btn-animate").toggleClass("btn-animate-grow");
+  $(".alert").toggleClass("alert-left-transfer");
+  $(".cover-photo").toggleClass("cover-photo-down");
+  $(".frame").toggleClass("frame-short");
+  $(".profile-photo-transfer").toggleClass("profile-photo-down-transfer");
+  $(".btn-goback").toggleClass("btn-goback-up-transfer");
+  $(".line").toggleClass("line-fade");
+	});
+});
+
+$(function() {
+  $(".btn-transfer").click(function() {
   $(".btn-animate").toggleClass("btn-animate-grow");
   $(".welcome").toggleClass("welcome-left-transfer");
   $(".cover-photo").toggleClass("cover-photo-down");
@@ -47,4 +59,16 @@ $(function() {
 
 function clickBack() {
 	$(location.replace("index.html"));
+};
+
+function clickBackAlert() {
+	$(location.replace("alert.html"));
+};
+
+function clickBackTransfer2() {
+	$(location.replace("transfer2.html"));
+};
+
+function clickBackTransfer3() {
+	$(location.replace("transfer3.html"));
 };
