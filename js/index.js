@@ -61,14 +61,21 @@ function clickBack() {
 	$(location.replace("index.html"));
 };
 
+function clickBackTransferUpdate() {
+	$(location.replace("transfer.html"));
+};
+
+//Для случая с запрещенной транзакцией
 function clickBackAlert() {
 	$(location.replace("alert.html"));
 };
 
+//Для случая с запрещенной транзакцией
 function clickBackTransfer2() {
 	$(location.replace("transfer2.html"));
 };
 
+//Для случая с запрещенной транзакцией
 function clickBackTransfer3() {
 	$(location.replace("transfer3.html"));
 };
