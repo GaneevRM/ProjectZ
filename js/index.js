@@ -16,6 +16,7 @@ $(function() {
   $(".form-signup-left").toggleClass("form-signup-down");
   $(".success").toggleClass("success-left"); 
   $(".frame").toggleClass("frame-short");
+  $(setTimeout('location.replace("transfer.html")', 3000));
 	});
 });
 
@@ -28,5 +29,22 @@ $(function() {
   $(".profile-photo").toggleClass("profile-photo-down");
   $(".btn-goback").toggleClass("btn-goback-up");
   $(".line").toggleClass("line-fade");
+  $(setTimeout('location.replace("transfer.html")', 3000));
 	});
 });
+
+$(function() {
+	$(".btn-transfer").click(function() {
+  $(".btn-animate").toggleClass("btn-animate-grow");
+  $(".welcome").toggleClass("welcome-left-transfer");
+  $(".cover-photo").toggleClass("cover-photo-down");
+  $(".frame").toggleClass("frame-short");
+  $(".profile-photo-transfer").toggleClass("profile-photo-down-transfer");
+  $(".btn-goback").toggleClass("btn-goback-up-transfer");
+  $(".line").toggleClass("line-fade");
+	});
+});
+
+function clickBack() {
+	$(location.replace("index.html"));
+};
